@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0,0.2);
+    width: 120px;
+    transition: 0.3s;
+    justify-content: center;
+    border-style: initial;
+}
+
+.card:focus {
+    background-color: #4D9C55;
+}
+.container {
+    padding: 2px 16px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rbd(0,0,0,0.2);
+    background-color: #4D9C55;
+}
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+

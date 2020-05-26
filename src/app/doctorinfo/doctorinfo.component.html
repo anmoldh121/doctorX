@@ -1,0 +1,37 @@
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="card">
+    <img src="{{data.image}}" alt="">
+    <div class="col">
+      <div class="row"><h1>{{data.name}}</h1></div>
+      <div class="row"><h2><i class="map marker alternate icon"></i> {{data.address}}</h2></div>
+      <div class="row"><h2><i class="money bill alternate outline icon"></i> {{data.price}}</h2></div>
+      <div class="row"><h2><i class="thumbs up outline icon"></i> {{data.rating}}</h2></div>
+      <div class="row"><h2><i class="stethoscope icon"></i> {{data.speciality}}</h2></div>
+      <div class="row"><h2><i class="clock outline icon"></i> {{data.time}}</h2></div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div #button (click)="onAppointmentClick()" class="ui positive button">Book Appointment</div>
+</div>
+<br>
+<br>
+<div *ngIf="successFlag" class="success-text container">Appointment Successfull</div>
+<br>
+<br>
+<div class="contianer textarea">
+  <div class="col">
+    <div style="justify-content: center" class="row"><h3>Write A review</h3></div>
+    <textarea name="review" id="" cols="20" rows="5"></textarea>
+  </div>
+</div>
+<br>
+<div class="container">
+    <div class="ui positive button">review</div>
+</div>
+<br>
+<br>

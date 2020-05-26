@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 0 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+    z-index: 1;
+    box-shadow: 4px 0 4px 4px rgb(0, 0, 0,0.2)
+}
+header .logo {
+    float: left;
+    color: teal;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 10px;
+    cursor: pointer;
+    border: 3px solid teal;
+    border-top-right-radius: 50%;
+    padding-right: 10px;
+    border-bottom-right-radius: 50%;
+    padding-left: 2px;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    list-style-type: none;
+}
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.menu-toggle {
+    color: black;
+    float: right;
+    height: 50px;
+    line-height: 65px;
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 991px) {
+    header {
+        padding: 0 20px;
+        width: 100%;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: white;
+        top: 62px;
+        transition: 0.5s;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    .active {
+        left: 0;
+    }
+    .deactive {
+        left: -100%;
+    }
+}
+
+html:not([data-scroll='0']) header{
+    
+    box-shadow: 4px 0 4px 4px rgb(0,0,0,0.2)
+}
+
+.login {
+    border: 1px solid blue;
+    line-height: 20px;
+    padding: 0;
+    height: 0;
+    color: blue;
+    cursor: pointer;
+}
+.home {
+    cursor: pointer;
+}
+.dropdown {
+    position: absolute;
+    padding: 9px;
+    margin-left: 33.5%;
+    margin-top: 4px;
+    z-index: 0;
+    background:white;
+    transition: 0.5s ease;
+    
+}
+.card {
+    box-shadow: 0 4px 10px 4px rgb(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 0;
+}
+.item {
+    font-size: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.profileicon {
+    font-size: 40px;
+    color: teal;
+}
+.profile {
+    cursor: pointer;
+}

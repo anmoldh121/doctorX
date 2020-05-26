@@ -1,0 +1,61 @@
+<div class="container">
+      <div class="card">
+        <ul style="flex-direction: column">
+          <li>
+            <ul style="flex-direction: row; justify-content: center;">
+              <li><a class="nav-text" style="border-bottom: 2px solid blue;color: gray">Login</a></li>
+              <li><a routerLink="/signup" class="nav-text">Signup</a></li>
+            </ul>
+          </li>
+          <li><ul>
+            <li style="margin-top:20px;"><h1>Welcome Back</h1></li>
+          </ul></li>
+          <li>    <ul style="flex-direction: row; justify-content: center">
+            <li><div class="logo">óctorX</div></li>
+          </ul>
+      </li>
+      <li> 
+      <ul style="justify-content: center; flex-direction: row;">
+          <li>
+            <div class="form">
+              <input [(ngModel)]="email" type="text" name="Email" autocomplete="off" required>
+              <label class="label-name" for="Email">
+                <span class="label-container">Email</span>
+              </label>
+            </div>
+          </li>
+          </ul>
+        </li>
+        
+          <li>
+            <ul style="justify-content: center;flex-direction: row">
+              <li>
+            <div style="margin-top: 30px;margin-bottom:41px;" class="form">
+              <input [(ngModel)]="password" type="password" name="Password" required>
+              <label class="label-name" for="password">
+                <span class="label-container">Password</span>
+              </label>
+            </div>
+          </li>
+          </ul>
+          </li>
+          <li>
+            <ul style="justify-content:center;">
+              <li style="font-size: 15px;margin-top:20px;color: green">Forgot Pass ?</li>
+              <li style="font-size: 15px;margin-top:20px;margin-left: 110px;"><input type="checkbox" name="" id="">Remember me</li>
+            </ul>
+          </li>
+          <li>
+            <ul style="flex-direction: row; justify-content: center"><li>
+            <div class="button">
+            <ul style="flex-direction: row">
+                <li><a (click)="login()" class="button-text">Login</a></li>
+            </ul>
+          </div></li></ul></li>
+        </ul>
+      </div>
+    </div>
+      <div *ngIf="loadingFlag" class="ui active inverted dimmer">
+        <div class="ui text loader">Loading</div>
+      </div>
+    

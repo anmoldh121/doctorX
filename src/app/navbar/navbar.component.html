@@ -1,0 +1,31 @@
+<header>
+  <div class="logo" (click)="home()">óctorX</div>
+  <nav [style.left.%] = "navClass">
+    <ul class="active">
+      <li><a (click)=onDoctorsClick()>Doctors</a></li>
+      <li><a>Chat</a></li>
+      <li><a>Pharmacy</a></li>
+      <li><a>Diagnosis</a></li>
+      <li *ngIf="loginFlag"><a class="login" style="color: blue;" (click)="login()">Login/Signup</a></li>
+      <li *ngIf="logoutFlag">
+        <a class="profile" (click)="onProfileClick()"><i class="user circle icon profileicon"></i></a>
+      </li>
+    </ul>
+    <div *ngIf="dropdown" class="dropdown card">
+        <div class="item">
+          Profile
+        </div>
+        <div class="item">
+          Appointments
+        </div>
+        <div class="item">
+          Settings
+        </div>
+        <div (click)="logout()" style="color: red" class="item">
+          Logout
+        </div>
+    </div>
+  </nav>
+  <div *ngIf="toggleBar" class="menu-toggle"><i (click)="bars()" class="bars icon"></i></div>
+  <div *ngIf="crossBar" class="menu-toggle"><i (click)="bars()" class="close icon"></i></div>
+</header>

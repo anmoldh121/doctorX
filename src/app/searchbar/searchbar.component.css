@@ -1,0 +1,38 @@
+input[type=text] {
+    border: 1px solid white;
+    font-size: 40px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    box-shadow:0 0 4px 4px rgb(0,0,0,0.2);
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+}
+i {
+    position: absolute;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 12px;
+    text-align: center;
+    color: grey;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 991px) {
+    input[type=text] {
+        font-size: 25px;
+    }
+    i {
+        font-size: 18px;
+        padding-top: 4px;
+    }
+}

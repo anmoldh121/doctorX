@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.grid-item {
+    border:1px solid #ccc;
+    display: flex;
+    box-shadow: 0 10px 20px rgb(0,0,0,0.19), 0 6px 6px rgb(0,0,0,0.23);
+    flex-direction: row;
+    border-radius: 5px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+
